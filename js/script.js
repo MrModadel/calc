@@ -5,9 +5,10 @@ let qe = a + b;
 let rr = a - b;
 let ew = a * b;
 let wy = a / b;
-console.log(qe, rr , ew , wy);
+console.log(qe, rr, ew, wy);
 let message = (cut === '+') ? qe :
    (cut === '-') ? rr :
       (cut === '*') ? ew :
-         wy;
-alert(message);
+         (cut === '/') ? wy :
+            "Не правильное значение!" ;
+   alert(message);
